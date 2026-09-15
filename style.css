@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+    background: #0D0C11;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-page {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: calc(100vh - 60px);
+    padding: 50px 20px 40px;
+}
+
+.loading {
+    text-align: center;
+    padding-top: 80px;
+    color: #A8A6B0;
+    font-size: 16px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile-image-container {
+    width: 112px;
+    height: 112px;
+    margin: 0 auto 18px;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #24232A;
+    border: 2px solid #2B2932;
+}
+
+.name-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.name-row h1 {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.verified-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #00A8FF;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.username {
+    margin: 7px 0 0;
+    color: #A8A6B0;
+    font-size: 15px;
+}
+
+.level {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background: #211F27;
+    color: #00E5FF;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.description {
+    max-width: 460px;
+    margin: 20px auto 0;
+    color: #D5D3DA;
+    font-size: 15px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    margin-top: 28px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.stat strong {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.stat span {
+    color: #A8A6B0;
+    font-size: 13px;
+}
+
+.videos-section {
+    margin-top: 42px;
+    border-top: 1px solid #29272F;
+}
+
+.videos-header {
+    padding: 17px 0;
+    font-size: 17px;
+    font-weight: 700;
+    border-bottom: 1px solid #29272F;
+}
+
+.no-videos {
+    padding: 60px 0;
+    color: #8F8D97;
+    font-size: 16px;
+}
+
+.not-found {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.not-found-icon {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #24232A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00E5FF;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.not-found h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.not-found p {
+    margin: 12px auto 0;
+    max-width: 340px;
+    color: #9997A1;
+    line-height: 1.5;
+}
+
+footer {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #6F6D77;
+    font-size: 12px;
+}
