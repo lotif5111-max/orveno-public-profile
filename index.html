@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Orveno Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="profile-page">
+
+        <div id="loading" class="loading">
+            Loading profile...
+        </div>
+
+        <section id="profile" class="profile" hidden>
+
+            <div class="profile-image-container">
+                <img
+                    id="profileImage"
+                    class="profile-image"
+                    src=""
+                    alt="Profile picture"
+                >
+            </div>
+
+            <div class="name-row">
+                <h1 id="profileName"></h1>
+
+                <span
+                    id="verifiedBadge"
+                    class="verified-badge"
+                    hidden
+                    aria-label="Verified"
+                >
+                    ✓
+                </span>
+            </div>
+
+            <p id="profileUsername" class="username"></p>
+
+            <div id="profileLevel" class="level"></div>
+
+            <p id="profileDescription" class="description"></p>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <strong id="followers">0</strong>
+                    <span>Followers</span>
+                </div>
+
+                <div class="stat">
+                    <strong id="following">0</strong>
+                    <span>Following</span>
+                </div>
+
+                <div class="stat">
+                    <strong id="likes">0</strong>
+                    <span>Likes</span>
+                </div>
+
+            </div>
+
+            <div class="videos-section">
+                <div class="videos-header">
+                    Videos
+                </div>
+
+                <div class="no-videos">
+                    No videos yet
+                </div>
+            </div>
+
+        </section>
+
+        <section id="notFound" class="not-found" hidden>
+
+            <div class="not-found-icon">
+                !
+            </div>
+
+            <h2>Profile not found</h2>
+
+            <p>
+                This Orveno profile doesn't exist or isn't available.
+            </p>
+
+        </section>
+
+        <section id="error" class="not-found" hidden>
+
+            <div class="not-found-icon">
+                !
+            </div>
+
+            <h2>Something went wrong</h2>
+
+            <p>
+                We couldn't load this Orveno profile.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <span>Orveno</span>
+        <span>•</span>
+        <span>Public Profile</span>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>
